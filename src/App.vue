@@ -1,15 +1,27 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Reactivity/>
+  <ConditionalRendering class="gap"/>
+  <ClassStyleBinding class="gap"/>
+  <ListRendering class="gap"/>
+  <EventFormBinding class="gap"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Reactivity from './components/Reactivity.vue'
+import ConditionalRendering from './components/ConditionalRendering.vue'
+import ClassStyleBinding from './components/ClassStyleBinding.vue'
+import ListRendering from './components/ListRendering.vue'
+import EventFormBinding from './components/EventFormBinding.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Reactivity,
+    ConditionalRendering,
+    ClassStyleBinding,
+    ListRendering,
+    EventFormBinding
   }
 }
 </script>
@@ -21,6 +33,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px 0;
+}
+.gap {
+    margin-top: 24px;
 }
 </style>
